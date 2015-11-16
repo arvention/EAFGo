@@ -1,0 +1,116 @@
+/*	HTML	*/
+html, body{
+    margin: 0;
+}
+
+/*	SignUp   */
+#overallDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loginBoxCenter{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+#loginDiv{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid #BCBCB3;
+    border-radius: 8px;
+}
+
+#loginLogo{
+    width: 75px;
+    height: 75px;
+    bottom: 400px;
+}
+
+#eafLabel{
+    bottom: 200px;
+    width: 230px; /* center via margin auto can't work without width and height*/
+    height: 85px;
+
+    font-family: sans-serif;
+    color: green;
+    font-weight: 700;
+    //text-shadow: 3px 3px 0 green,
+     //   -3px -3px 0 gray;
+    font-size: 100px;
+    letter-spacing: -6px;
+}
+#goLabel{
+    color: white;
+    text-shadow: 4px 4px 0 green,
+       -4px -4px 0 gray;
+    display: inline;
+}
+
+#loginForm{
+    width: 245px;
+    height: 161px;
+    top: 120px;
+    font-size: 0;
+}
+
+.loginFields{
+    position: relative;
+    width: inherit;
+    height: 35px;
+    border: 1px solid #BCBCB3;
+    padding-left: 10px;
+}
+
+#passwordField{
+    top: 2px;
+}
+
+.loginFields:hover{
+    border: green 1px solid;
+}
+
+.loginFields_error{
+    border: salmon 3px inset;
+    background-color: bisque;
+}
+
+#loginButton{
+    height: 35px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.clickableButton{
+    background-color: #BCBCB3;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.clickableButton:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
