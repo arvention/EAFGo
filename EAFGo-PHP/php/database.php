@@ -31,7 +31,9 @@
             
             if ($result->num_rows == 1) {
                 $row = $result->fetch_assoc();
-                $user = new user($row["userID"], $row["idNumber"], $row["password"], $row["lastName"], $row["firstName"], 
+                $user = new user();
+                
+                $user->_construct($row["userID"], $row["idNumber"], $row["password"], $row["lastName"], $row["firstName"], 
                     $row["middleName"], $row["userTypeID"], $row["collegeID"], $row["programID"], $row["flowchartID"]);
                 return $user;
             } else {

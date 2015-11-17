@@ -12,8 +12,8 @@
     $userDetails = $database->checkLogin($id, $password);
     
     if(!is_null($userDetails)){
-        $_SESSION["userDetails"] = $userDetails;
-        header("Location: ../newEmptyPHPWebPage.php");
+        $_SESSION["userDetails"] = serialize($userDetails);
+        header("Location: ../SampleHomePage.php");
     }
     else{
         header("Location: ../index.php");
