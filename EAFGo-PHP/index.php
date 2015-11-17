@@ -6,13 +6,14 @@
         <link rel="shortcut icon" href="img/dlsu_logo.png" />
         <link rel="stylesheet" type="text/css" 	media="all" href="css/login.css" />
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <!--script type="text/javascript" src ="js/login.js"></script-->
+        <script type="text/javascript" src="js/jquery.color.js"></script>
+        <script type="text/javascript" src ="js/login.js"></script>
     </head>
     <body>
         <div id = "overallDiv">
             <div id ="loginDiv">
                 <div id="loginLogo" class = "loginBoxCenter">
-                    <img src = "img/dlsu_logo.png" height="75px" width="75px"/>
+                    <img src = "img/dlsu_logo.png" height="100px" width="100px"/>
                 </div>
                 
                 <h1 id = "eafLabel" class = "loginBoxCenter">eaf<div id="goLabel">go</div></h1>
