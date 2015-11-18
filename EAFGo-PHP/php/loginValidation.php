@@ -13,10 +13,10 @@
     
     if($userDetails != false){
         $_SESSION["userDetails"] = $userDetails;
-        echo 1;
+        unset($_SESSION['loginTrials']);
         header("Location: ../SampleHomePage.php");
     }
     else{
-        echo 0;
+        $_SESSION["loginTrials"] = 1;
         header("Location: ../index.php");
     }

@@ -3,7 +3,7 @@ html, body{
     margin: 0;
 }
 
-/*	SignUp   */
+/*	Login   */
 #overallDiv{
     position: absolute;
     top: 0;
@@ -55,6 +55,15 @@ html, body{
     font-size: 100px;
     letter-spacing: -6px;
 }
+
+#errorDiv{
+    top: 220px;
+    width: 200px;
+    height: 10px;
+    font-family: sans-serif;
+    color: red;
+}
+
 #goLabel{
     color: white;
     text-shadow: 4px 4px 0 #00703c,
@@ -109,6 +118,8 @@ html, body{
     background-color: #00703c;
     cursor: pointer;
 }
+
+
 
 a{
     text-decoration: none;

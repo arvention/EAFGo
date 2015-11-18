@@ -1,8 +1,12 @@
 <?php
     session_start();
-    //if(!empty($_SESSION['login_user'])){
-    //    header('Location: home.php');
-    //}
+    
+    if(!empty($_SESSION['userDetails'])){
+        header('Location: SampleHomePage.php');
+    }
+    if(empty($_SESSION['loginTrials'])){
+        $_SESSION["loginTrials"] = 0;
+    }
 ?>
 <html>
     <head>
@@ -29,7 +33,14 @@
                     <input type="password" name = "password" placeholder = "Password" id = "passwordField" class = "loginFields" required/>
                     <input type ="submit" id = "loginButton" class = "clickableButton" value="Let's start!"/>
                 </form>
-                <div class="err" id="add_err"></div>
+                <?php
+                    if($_SESSION['loginTrials'] > 0){
+                ?>
+                <div class = "loginBoxCenter" id="errorDiv">Invalid ID and/or Password.</div>
+                <?php
+                    }
+                    $_SESSION['loginTrials'] = 0;
+                ?>
             </div>
         </div>
     </body>
