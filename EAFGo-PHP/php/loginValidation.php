@@ -4,19 +4,19 @@
     session_start();
 
     $database = new database;
-
+    $database->_construct();
+    
     $id = filter_input(INPUT_POST, 'id');
     $password = filter_input(INPUT_POST, 'password');
     
-    $database->_construct();
     $userDetails = $database->checkLogin($id, $password);
     
-    if(!is_null($userDetails)){
-        $_SESSION["userDetails"] = serialize($userDetails);
+    if($userDetails != false){
+        $_SESSION["userDetails"] = $userDetails;
+        echo 1;
         header("Location: ../SampleHomePage.php");
     }
     else{
+        echo 0;
         header("Location: ../index.php");
     }
-
-    

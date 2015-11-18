@@ -10,7 +10,7 @@
     </head>
     <body>
         <?php
-        $lol = unserialize($_SESSION["userDetails"]);
+        $lol = $_SESSION["userDetails"];
         echo "hello " . $lol->getFirstName();
         ?>
     </body>

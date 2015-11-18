@@ -28,8 +28,8 @@
             
             $statement = "SELECT * from user where idNumber = $id AND password = $password ;";
             $result = $this->conn->query($statement);
-            
-            if ($result->num_rows == 1) {
+            //$num_row = mysqli_num_rows($result);
+            if ($result != false) {
                 $row = $result->fetch_assoc();
                 $user = new user();
                 
@@ -37,7 +37,7 @@
                     $row["middleName"], $row["userTypeID"], $row["collegeID"], $row["programID"], $row["flowchartID"]);
                 return $user;
             } else {
-                return null;
+                return false;
             }
             //$this->conn->close();
         }

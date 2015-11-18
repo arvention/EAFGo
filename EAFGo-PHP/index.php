@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    //if(!empty($_SESSION['login_user'])){
+    //    header('Location: home.php');
+    //}
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -20,10 +25,11 @@
                 
                 <h1 id = "eafLabel" class = "loginBoxCenter">eaf<div id="goLabel">go</div></h1>
                 <form id = "loginForm" class = "loginBoxCenter" action = "php/loginValidation.php" method = "post">
-                    <input type="text" name ="id" placeholder = "ID" class = "loginFields" required/>
+                    <input type="text" name ="id" placeholder = "ID" id = "idField" class = "loginFields" required/>
                     <input type="password" name = "password" placeholder = "Password" id = "passwordField" class = "loginFields" required/>
                     <input type ="submit" id = "loginButton" class = "clickableButton" value="Let's start!"/>
                 </form>
+                <div class="err" id="add_err"></div>
             </div>
         </div>
     </body>
