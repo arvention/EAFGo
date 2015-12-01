@@ -11,7 +11,7 @@
         public function _construct(){
             $dbServerName = "localhost:3306";
             $dbUsername = "root";
-            $dbPassword = "password";
+            $dbPassword = "admin";
             $dbName = "eafgo";
             
             // Create connection

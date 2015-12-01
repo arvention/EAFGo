@@ -1,9 +1,9 @@
 <?php
-    include('php/user.php');
-    session_start();
-    if(empty($_SESSION["userDetails"])){
-        header("Location: index.php");
-    }
+include('php/user.php');
+session_start();
+if (empty($_SESSION["userDetails"])) {
+    header("Location: index.php");
+}
 ?>
 
 <html>
