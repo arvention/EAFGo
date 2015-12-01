@@ -41,10 +41,11 @@ and open the template in the editor.
                     <li><a href="#assessmentContent" class = "tab">View Assessment</a></li>
                 </ul>
                 <div id = "homeContent">
-                    <p>Based on your flowchart, you can enroll to the following courses for the upcoming term:</p>
+                    <p id = "hometabDescription">Based on your flowchart, you can enroll to the following 
+                        courses for the upcoming term:</p>
                     <form>
-                        <table>
-                            <tr>
+                        <table id = "classRecommenderTable">
+                            <tr class="classRecommenderRow">
                                 <th></th>
                                 <th>Course</th>
                                 <th>Section</th>
@@ -52,40 +53,40 @@ and open the template in the editor.
                                 <th>Time</th>
                                 <th>Room</th>
                             </tr>
-                            <tr>
-                                <th><input type ="checkbox" ></th>
+                            <tr class="classRecommenderRow">
+                                <td><input type ="checkbox"/></td>
                                 <td>ADVDISC</td>
                                 <td>X23</td> 
                                 <td>MW</td>
                                 <td>915-1045</td>
                                 <td>MRE413</td>
                             </tr>
-                            <tr>
-                                <td><input type ="checkbox" ></td>
+                            <tr class="classRecommenderRow">
+                                <td><input type ="checkbox"/></td>
                                 <td>AUTOMAT</td>
                                 <td>X23</td> 
                                 <td>TH</td>
                                 <td>1100-1230</td>
                                 <td>MRW413</td>
                             </tr>
-                            <tr>
-                                <td><input type ="checkbox" ></td>
+                            <tr class="classRecommenderRow">
+                                <td><input type ="checkbox"/></td>
                                 <td>SOFENGG</td>
                                 <td>X23</td> 
                                 <td>TH</td>
                                 <td>1430-1600</td>
                                 <td>MRW413</td>
                             </tr>
-                            <tr>
-                                <td><input type ="checkbox" ></td>
+                            <tr class="classRecommenderRow">
+                                <td><input type ="checkbox"/></td>
                                 <td>GAMEDES</td>
                                 <td>X23</td> 
                                 <td>MW</td>
                                 <td>1100-1230</td>
                                 <td>MRE412</td>
                             </tr>
-                            <tr>
-                                <td><input type ="checkbox" ></td>
+                            <tr class="classRecommenderRow">
+                                <td><input type ="checkbox"/></td>
                                 <td>TREDTRI</td>
                                 <td>X23</td> 
                                 <td>TH</td>
@@ -93,7 +94,7 @@ and open the template in the editor.
                                 <td>MRE303</td>
                             </tr>
                         </table>
-                        <input type ="submit" value="Enlist Chosen Course/s"/>
+                        <input type ="submit" id="classRecommenderButton" value="Enlist Chosen Course/s"/>
                     </form>
                 </div>
                 <div id = "enrollmentContent">

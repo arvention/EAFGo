@@ -150,3 +150,59 @@ body{
     overflow-y: scroll;
     background-color: whitesmoke;
 }
+
+/* HOME TAB */
+
+#hometabDescription{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#classRecommenderTable{
+    margin: 0 auto; /* to center the table on div */
+    width: 800px;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+
+#classRecommenderButton{
+    background-color: #00703c;
+    color: white;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #00703c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#classRecommenderButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #00703c;
+    border: 2px solid #00703c;
+}
+
+.classRecommenderRow{
+    text-align: center;
+    border: 1px solid black;
+}
+
+table{
+    border-spacing: 0px;
+}
+
+td, th{
+    border: 1px black solid;
+    height: 30px;
+}
+
+tr:nth-child(even) {
+    background: rgb(220, 255, 220);
+}
+tr:nth-child(odd) {
+    background: white;
+}
