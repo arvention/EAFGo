@@ -95,7 +95,7 @@ and open the template in the editor.
             </div>
             <div id = "bodyContent">
                 <ul class = "menuTabs">
-                    <li><a href="#homeContent" class = "tab">Home</a></li>
+                    <li><a href="#homeContent" class = "tab" style="color: rgb(255, 255, 255); background-color: rgb(0, 128, 0);">Home</a></li>
                     <li><a href="#enrollmentContent" class = "tab">Enrollment</a></li>
                     <li><a href="#assessmentContent" class = "tab">View Assessment</a></li>
                 </ul>
