@@ -159,14 +159,139 @@ and open the template in the editor.
                 <div id = "enrollmentContent">
                     <div id = "enrollDropDiv">
                         <div id = "enrollChoiceDiv">
+                            <h1 id = "enrollmentTitle">Enrollment</h1>
                             <h2 id = "enrollDropTitle">What would you like to do?</h2>
                             <button id = "enrollButton" class = "enlistButton">Enlist Courses</button>
                             <button id = "enrollButton" class = "dropButton">Drop Courses</button>
                         </div>
                         <div id = "enlistDiv">
-                            <button id = "enrollButton" class = "backEnlistButton">Go Back</button>
-                            Enlist
+                            <div id = "enlistStep1Div">
+                                <h2 id = "enrollDropTitle">Enlistment Step 1: Select Classes</h2>
+                                <div id = "enlistSeparator">
+                                    <div id = "enlistTableStep1Div">
+                                        <table id = "enlistTable">
+                                            <tr class="classRecommenderRow">
+                                                <th>Course</th>
+                                                <th>Section</th>
+                                                <th>Day/s</th>
+                                                <th>Time</th>
+                                                <th>Room</th>
+                                            </tr>
+                                            <tr class="classRecommenderRow">
+                                                <td>ADVDISC</td>
+                                                <td>X23</td> 
+                                                <td>MW</td>
+                                                <td>915-1045</td>
+                                                <td>MRE413</td>
+                                            </tr>
+                                            <tr class="classRecommenderRow">
+                                                <td>TREDTRI</td>
+                                                <td>X23</td> 
+                                                <td>TH</td>
+                                                <td>1615-1745</td>
+                                                <td>MRE303</td>
+                                            </tr>
+                                            <tr class="classRecommenderRow">
+                                                <td>AUTOMAT</td>
+                                                <td>X23</td> 
+                                                <td>TH</td>
+                                                <td>1100-1230</td>
+                                                <td>MRW413</td>
+                                            </tr>
+                                            <tr class="classRecommenderRow">
+                                                <td></td>
+                                                <td></td> 
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="classRecommenderRow">
+                                                <td></td>
+                                                <td></td> 
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id = "classNumberDiv">
+                                        <h4 id = "classNumberTitle">Class No:</h4>
+
+                                        <div id = "classNumberInput">
+                                            <input type = "text" placeholder = "Ex. 1234" id = "classNumberText">
+                                            <button id = "classNumberButton">→</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class = "backEnlistButton">Go Back</button>
+                                <button id = "enlistingButton" class = "proceedEnlistFirstButton">Proceed</button>
+                            </div>
+
+                            <div id = "enlistStep2Div">
+                                <h2 id = "enrollDropTitle">Enlistment Step 2: Enlist Classes</h2>
+                                <div id = "enlistTableStep2Div">
+                                    <table id = "confirmTable">
+                                        <tr class="classRecommenderRow">
+                                            <th></th>
+                                            <th>Course</th>
+                                            <th>Section</th>
+                                            <th>Day/s</th>
+                                            <th>Time</th>
+                                            <th>Room</th>
+                                        </tr>
+                                        <tr class="classRecommenderRow">
+                                            <th><a id = "removeCourse"> X </a></th>
+                                            <td>ADVDISC</td>
+                                            <td>X23</td> 
+                                            <td>MW</td>
+                                            <td>915-1045</td>
+                                            <td>MRE413</td>
+                                        </tr>
+                                        <tr class="classRecommenderRow">
+                                            <th><a id = "removeCourse"> X </a></th>
+                                            <td>TREDTRI</td>
+                                            <td>X23</td> 
+                                            <td>TH</td>
+                                            <td>1615-1745</td>
+                                            <td>MRE303</td>
+                                        </tr>
+                                        <tr class="classRecommenderRow">
+                                            <th><a id = "removeCourse"> X </a></th>
+                                            <td>AUTOMAT</td>
+                                            <td>X23</td> 
+                                            <td>TH</td>
+                                            <td>1100-1230</td>
+                                            <td>MRW413</td>
+                                        </tr>
+                                        <tr class="classRecommenderRow">
+                                            <td></td>
+                                            <td></td> 
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="classRecommenderRow">
+                                            <td></td>
+                                            <td></td> 
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class = "backEnlistSecondButton">Go Back</button>
+                                <button id = "enlistingButton" class = "proceedEnlistSecondButton">Proceed</button>
+                            </div>
+
+                            <div id = "enlistStep3Div">
+                                <h2 id = "enrollDropTitle">Enlistment Step 3: Complete!</h2>
+                                <p id="enlistFinalMessage">Thank you!<br/><br/>Your courses Have been enlisted!</p>
+                                <button class = "backEnlistThirdButton">Go Back to Enrollment Page</button>
+                            </div>
                         </div>
+
                         <div id = "dropDiv">
                             <p id="dropLabel">Drop Courses</p>
                             <p id="dropSchedLabel">Your Enrolled Courses for AY 2015-2016, Term 2</p>

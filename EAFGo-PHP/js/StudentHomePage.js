@@ -22,31 +22,61 @@ $(document).ready(function() {
         });
     });
     
-    $('.enlistButton').click(function () {
-        $("#enrollChoiceDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+    $(document).on('click', '.enlistButton', function () {
+        $("#enrollChoiceDiv").animate({opacity: 0}, 'slow');
         $("#enrollChoiceDiv").css('display', 'none');
-        $("#enlistDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enlistDiv").animate({opacity: 1}, 'slow');
         $("#enlistDiv").css('display', 'block');
+        $("#enlistStep1Div").css('display', 'block');
+        $("#enlistStep1Div").animate({opacity: 1}, 'slow');
     });
     
-    $('.dropButton').click(function () {
-        $("#enrollChoiceDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+    $(document).on('click', '.dropButton', function () {
+        $("#enrollChoiceDiv").animate({opacity: 0}, 'slow');
         $("#enrollChoiceDiv").css('display', 'none');
-        $("#dropDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#dropDiv").animate({opacity: 1}, 'slow');
         $("#dropDiv").css('display', 'block');
     });
     
-    $('.backEnlistButton').click(function () {
-        $("#enlistDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+    $(document).on('click', '.backEnlistButton', function () {
+        $("#enlistDiv").animate({opacity: 0}, 'slow');
         $("#enlistDiv").css('display', 'none');
-        $("#enrollChoiceDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enrollChoiceDiv").animate({opacity: 1}, 'slow');
         $("#enrollChoiceDiv").css('display', 'block');
     });
     
-    $('.backDropButton').click(function () {
-        $("#dropDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+    $(document).on('click', '.backDropButton', function () {
+        $("#dropDiv").animate({opacity: 0}, 'slow');
         $("#dropDiv").css('display', 'none');
-        $("#enrollChoiceDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enrollChoiceDiv").animate({opacity: 1}, 'slow');
+        $("#enrollChoiceDiv").css('display', 'block');
+    });
+    
+    $(document).on('click', '.proceedEnlistFirstButton', function () {
+        $("#enlistStep1Div").animate({opacity: 0}, 'slow');
+        $("#enlistStep1Div").css('display', 'none');
+        $("#enlistStep2Div").animate({opacity: 1}, 'slow');
+        $("#enlistStep2Div").css('display', 'block');
+    });
+    
+    $(document).on('click', '.backEnlistSecondButton', function () {
+        $("#enlistStep2Div").animate({opacity: 0}, 'slow');
+        $("#enlistStep2Div").css('display', 'none');
+        $("#enlistStep1Div").animate({opacity: 1}, 'slow');
+        $("#enlistStep1Div").css('display', 'block');
+    });
+    
+    $(document).on('click', '.proceedEnlistSecondButton', function () {
+        $("#enlistStep2Div").animate({opacity: 0}, 'slow');
+        $("#enlistStep2Div").css('display', 'none');
+        $("#enlistStep3Div").animate({opacity: 1}, 'slow');
+        $("#enlistStep3Div").css('display', 'block');
+    });
+    
+    $(document).on('click', '.backEnlistThirdButton', function () {
+        $("#enlistStep3Div").animate({opacity: 0}, 'slow');
+        $("#enlistStep3Div").css('display', 'none');
+        $("#enrollChoiceDiv").animate({opacity: 1}, 'slow');
         $("#enrollChoiceDiv").css('display', 'block');
     });
 });

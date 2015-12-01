@@ -108,11 +108,13 @@ body{
     margin-left: 2px;
     border: none;
     border-top-right-radius: 4px;
+    background-color: olivedrab;
     border-bottom-right-radius: 4px;
 }
 
 #searchSubmit a{
     text-decoration: none;
+    color: white;
 }
 
 #bodyContent{
@@ -195,7 +197,7 @@ body{
     width: 200px;
 }
 
-#classRecommenderButton:hover, #assessmentPrintButton:hover, #enrollButton:hover, #dropButton:hover{
+#classRecommenderButton:hover, #assessmentPrintButton:hover, #enrollButton:hover, #dropButton:hover, #enlistingButton:hover, .backEnlistThirdButton:hover{
     cursor: pointer;
     background-color: white;
     color: #00703c;
@@ -297,7 +299,8 @@ tr:nth-child(odd) {
 }
 
 .closeModal:hover {
-    background: #00ff00;
+    background-color: grey;
+    color: white;
 }
 
 #searchResultTable{
@@ -340,8 +343,8 @@ tr:nth-child(odd) {
 
 #enrollDropTitle{
     margin-left: 20px;
-    margin-bottom: 30px;
-    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 #enrollButton{
@@ -356,11 +359,11 @@ tr:nth-child(odd) {
     padding: 20px;
 }
 
-#enlistDiv, #dropDiv{
+#enlistDiv, #dropDiv, #enlistStep2Div, #enlistStep3Div{
     display: none;
 }
 
-#hometabDescription, #scheduleTitle, #enrollDropTitle{
+#hometabDescription, #scheduleTitle, #enrollDropTitle, #enrollmentTitle, #classNumberTitle{
     color: rgba(30, 80, 30, .9);
 }
 
@@ -420,4 +423,132 @@ tr:nth-child(odd) {
     background-color: white;
     color:grey;
     cursor: pointer;
+}
+
+/* Enlistment */
+#enlistingButton{
+    background-color: #00703c;
+    color: white;
+    width: 100px;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid #00703c;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+#enrollmentTitle{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+#enlistTable{
+    width: 330px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+#enlistSeparator{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#enlistTableStep1Div{
+    width: 350px;
+}
+
+#classNumberDiv{
+    flex: 1;
+}
+
+#classNumberTitle{
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#classNumberInput{
+    border-radius: 3px;
+    background-color: white;
+    width: 125px;
+    margin-left: 20px;
+}
+
+#classNumberText{
+    margin-left: 0px;
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+#classNumberButton{
+    border: none;
+    background-color: #00703c;
+    color: white;
+    padding: 2px;
+    width: 20px;
+    margin-right: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#classNumberButton:hover{
+    cursor: pointer;
+}
+
+.proceedEnlistFirstButton, .proceedEnlistSecondButton{
+    float: right;
+    margin-right: 40px;
+}
+
+.backEnlistButton, .backEnlistSecondButton{
+    background-color: grey;
+    width: 100px;
+    display: inline-block;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: white;
+}
+
+.backEnlistButton:hover, .backEnlistSecondButton:hover{
+    background-color: white;
+    color:grey;
+    cursor: pointer;
+}
+
+#confirmTable{
+    width: 450px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+#removeCourse{
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+}
+
+#removeCourse:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+#enlistFinalMessage{
+    color: #00703c;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.backEnlistThirdButton{
+    width: 300px;
+    background-color: #00703c;
+    color: white;
+    border: 2px solid #00703c;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 30px;
 }
