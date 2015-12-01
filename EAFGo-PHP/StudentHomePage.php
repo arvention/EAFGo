@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+    include('php/user.php');
+    session_start();    
+    session_start();
+    if(empty($_SESSION["userDetails"])){
+        header("Location: index.php");
+    }
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -23,8 +25,10 @@ and open the template in the editor.
             </div>
             <div id = "headerRight">
                 <img src = "img/StuPicture.jpg" id = "headerPicture" height="50px" width="50px"/>
-                <h3 id = "headerName">Hello, Stu D. Ante!</h3>
-                <a id = "logoutLabel">Logout</a>
+                <ul id="headerList">
+                    <li><h3 id = "headerName">Hello, Stu D. Ante!</h3></li>
+                    <li><a href="php/logout.php" id = "logoutLabel">Logout</a></li>
+                </ul>
             </div>
         </div>
         <div id = "bodyDiv">
@@ -288,7 +292,7 @@ and open the template in the editor.
 
                             <div id = "enlistStep3Div">
                                 <h2 id = "enrollDropTitle">Enlistment Step 3: Complete!</h2>
-                                <p id="enlistFinalMessage">Thank you!<br/><br/>Your courses Have been enlisted!</p>
+                                <p id="enlistFinalMessage">Thank you!<br/><br/>Your courses have been enlisted!</p>
                                 <button class = "backEnlistThirdButton">Go Back to Enrollment Page</button>
                             </div>
                         </div>
