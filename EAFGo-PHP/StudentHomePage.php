@@ -30,8 +30,67 @@ and open the template in the editor.
             <div id = "bodyHeading">
                 <h1 id = "bodyTitle">De La Salle University</h1>
                 <div id = "searchDiv">
-                    <img src = "img/magnify_search.png" id = "searchIcon" height="15px" width="15px"/>
-                    <input type = "text" id = "searchbar" placeholder = "Search for a course">
+                    <form>
+                        <img src = "img/magnify_search.png" id = "searchIcon" height="15px" width="15px"/>
+                        <input type = "text" id = "searchbar" placeholder = "Search for a course">
+                        <button type = "submit" id = "searchSubmit"><a href="#openResultModal">></a></button>
+                    </form>
+                </div>
+            </div>
+            <div id = "openResultModal" class = "resultModal">
+                <div> <a href = "#close" title="Close" class = "closeModal">X</a>
+                    <h2 id = "searchTitle">Search Results for AUTOMAT</h2>
+
+                    <table id = "searchResultTable">
+                        <tr class="classRecommenderRow">
+                            <th>Course</th>
+                            <th>Section</th>
+                            <th>Day/s</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                            <th>Class Number</th>
+                        </tr>
+                        <tr class="classRecommenderRow">
+                            <td>AUTOMAT</td>
+                            <td>X23</td> 
+                            <td>MW</td>
+                            <td>915-1045</td>
+                            <td>MRE413</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr class="classRecommenderRow">
+                            <td>AUTOMAT</td>
+                            <td>X22</td> 
+                            <td>TH</td>
+                            <td>1100-1230</td>
+                            <td>MRW413</td>
+                            <td>1235</td>
+                        </tr>
+                        <tr class="classRecommenderRow">
+                            <td>AUTOMAT</td>
+                            <td>X21</td> 
+                            <td>TH</td>
+                            <td>1430-1600</td>
+                            <td>MRW413</td>
+                            <td>1236</td>
+                        </tr>
+                        <tr class="classRecommenderRow">
+                            <td>AUTOMAT</td>
+                            <td>X20</td> 
+                            <td>MW</td>
+                            <td>1100-1230</td>
+                            <td>MRE412</td>
+                            <td>1237</td>
+                        </tr>
+                        <tr class="classRecommenderRow">
+                            <td>AUTOMAT</td>
+                            <td>X19</td> 
+                            <td>TH</td>
+                            <td>1615-1745</td>
+                            <td>MRE303</td>
+                            <td>1238</td>
+                        </tr>
+                    </table>    
                 </div>
             </div>
             <div id = "bodyContent">
