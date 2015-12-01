@@ -146,8 +146,8 @@ body{
 /* CONTENTS */
 
 #homeContent, #enrollmentContent, #assessmentContent{
-    height: 620px;
-    overflow-y: scroll;
+    height: 400px;
+    overflow-y: auto;
     background-color: whitesmoke;
 }
 
@@ -162,14 +162,14 @@ body{
     margin-bottom: 20px;
 }
 
-#classRecommenderTable{
+#classRecommenderTable, #assessmentTable{
     margin: 0 auto; /* to center the table on div */
     width: 800px;
     font-family: sans-serif;
     border: 1px solid black;
 }
 
-#classRecommenderButton{
+#classRecommenderButton, #assessmentPrintButton{
     background-color: #00703c;
     color: white;
     margin: 20px auto;
@@ -177,9 +177,10 @@ body{
     border: 1px solid #00703c;
     border-radius: 5px;
     font-size: 16px;
+    width: 200px;
 }
 
-#classRecommenderButton:hover{
+#classRecommenderButton:hover, #assessmentPrintButton:hover{
     cursor: pointer;
     background-color: white;
     color: #00703c;
@@ -191,13 +192,44 @@ body{
     border: 1px solid black;
 }
 
-table{
-    border-spacing: 0px;
-}
-
-td, th{
+.classRecommenderRow > *{
     border: 1px black solid;
     height: 30px;
+}
+
+/* ASSESSMENT TAB*/
+
+#assessmentHeaderDiv{
+    text-align: center;
+}
+
+#assessmenttabDescription{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#yearTermSelect{
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.assessmentRow{
+    border:none;
+    height: 30px;
+}
+
+.assessmentRow > *{
+    padding-left: 20px;
+}
+
+table{
+    border-spacing: 0px;
 }
 
 tr:nth-child(even) {
@@ -206,3 +238,4 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background: white;
 }
+

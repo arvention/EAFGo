@@ -101,7 +101,119 @@ and open the template in the editor.
                     enrollment
                 </div>
                 <div id = "assessmentContent">
-                    assessment
+                    <div id="assessmentHeaderDiv">
+                        <p id="assessmenttabDescription">Select School Year and Term:</p>
+                        <select id="yearTermSelect">
+                            <option>First Trimester, AY 2013-2014</option>
+                            <option>Second Trimester, AY 2013-2014</option>
+                            <option>Third Trimester, AY 2013-2014</option>
+                            <option>First Trimester, AY 2014-2015</option>
+                            <option>Second Trimester, AY 2014-2015</option>
+                            <option>Third Trimester, AY 2014-2015</option>
+                            <option>First Trimester, AY 2015-2016</option>
+                            <option>Second Trimester, AY 2015-2016</option>
+                        </select>
+                    </div>
+                    <form>
+                        <table id = "assessmentTable">
+                            <tr class="assessmentRow">
+                                <td><b>Tuition</b></td>
+                                <td></td>
+                                <td>38,831.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td><b>Miscellaneous</b></td>
+                                <td></td>
+                                <td>5,918.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Trimestral Reg</td>
+                                <td>872.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Student Services</td>
+                                <td>992.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Athletics</td>
+                                <td>579.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Stud Mat'ls & Forms</td>
+                                <td>135.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Medical/Dental</td>
+                                <td>400.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Library</td>
+                                <td>2,075.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Museum Fee</td>
+                                <td>15.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Information and Comm</td>
+                                <td>786.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Insurance</td>
+                                <td>64.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td><b>Special Fees</b></td>
+                                <td></td>
+                                <td>400.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>P. U. S. O.</td>
+                                <td>100.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Alumni Fee</td>
+                                <td>200.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Social Action Fee</td>
+                                <td>100.00</td>
+                                <td></td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td><b>Laboratory Fees</b></td>
+                                <td></td>
+                                <td>3,815.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>Computer Lab</td>
+                                <td></td>
+                                <td>3,815.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td>ID Validation</td>
+                                <td></td>
+                                <td>46.00</td>
+                            </tr>
+                            <tr class="assessmentRow">
+                                <td><b>TOTAL</b></td>
+                                <td></td>
+                                <td>49,010.00</td>
+                            </tr>
+                        </table>
+                        <input type ="submit" id="assessmentPrintButton" value="Print my EAF"/>
+                    </form>
                 </div>
             </div>
         </div>
