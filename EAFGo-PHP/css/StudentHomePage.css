@@ -195,7 +195,7 @@ body{
     width: 200px;
 }
 
-#classRecommenderButton:hover, #assessmentPrintButton:hover{
+#classRecommenderButton:hover, #assessmentPrintButton:hover, #enrollButton:hover{
     cursor: pointer;
     background-color: white;
     color: #00703c;
@@ -307,4 +307,58 @@ tr:nth-child(odd) {
 #searchTitle{
     color: green;
     text-align: center;
+}
+
+/* Enrollment */
+
+#enrollmentContent{
+    display: flex;
+}
+
+#scheduleDiv{
+    font-family: sans-serif;
+    background-color: #c2ffc2;
+}
+    
+#enrollDropDiv{
+    width: 70%;
+    font-family: sans-serif;
+}
+
+#scheduleTable{
+    width: 400px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#scheduleTitle{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+#enrollDropTitle{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+#enrollButton{
+    background-color: #00703c;
+    color: white;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #00703c;
+    border-radius: 5px;
+    font-size: 24px;
+    width: 400px;
+    padding: 20px;
+}
+
+#enlistDiv, #dropDiv{
+    display: none;
+}
+
+#hometabDescription, #scheduleTitle, #enrollDropTitle{
+    color: rgba(30, 80, 30, .9);
 }

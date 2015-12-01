@@ -21,4 +21,32 @@ $(document).ready(function() {
             e.preventDefault();
         });
     });
+    
+    $('.enlistButton').click(function () {
+        $("#enrollChoiceDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+        $("#enrollChoiceDiv").css('display', 'none');
+        $("#enlistDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enlistDiv").css('display', 'block');
+    });
+    
+    $('.dropButton').click(function () {
+        $("#enrollChoiceDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+        $("#enrollChoiceDiv").css('display', 'none');
+        $("#dropDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#dropDiv").css('display', 'block');
+    });
+    
+    $('.backEnlistButton').click(function () {
+        $("#enlistDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+        $("#enlistDiv").css('display', 'none');
+        $("#enrollChoiceDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enrollChoiceDiv").css('display', 'block');
+    });
+    
+    $('.backDropButton').click(function () {
+        $("#dropDiv").animate({left: '-=300px', opacity: 0}, 'slow');
+        $("#dropDiv").css('display', 'none');
+        $("#enrollChoiceDiv").animate({left: '-=400px', opacity: 1}, 'slow');
+        $("#enrollChoiceDiv").css('display', 'block');
+    });
 });

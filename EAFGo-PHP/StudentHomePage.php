@@ -157,7 +157,68 @@ and open the template in the editor.
                     </form>
                 </div>
                 <div id = "enrollmentContent">
-                    enrollment
+                    <div id = "enrollDropDiv">
+                        <div id = "enrollChoiceDiv">
+                            <h2 id = "enrollDropTitle">What would you like to do?</h2>
+                            <button id = "enrollButton" class = "enlistButton">Enlist Courses</button>
+                            <button id = "enrollButton" class = "dropButton">Drop Courses</button>
+                        </div>
+                        <div id = "enlistDiv">
+                            <button id = "enrollButton" class = "backEnlistButton">Go Back</button>
+                            Enlist
+                        </div>
+                        <div id = "dropDiv">
+                            <button id = "enrollButton" class = "backDropButton">Go Back</button>
+                            drop
+                        </div>
+                    </div>
+                    <div id = "scheduleDiv">
+                        <h3 id = "scheduleTitle">My AY 2015-2016, Term 2 Class Schedule</h3>
+                        <table id = "scheduleTable">
+                            <tr class="classRecommenderRow">
+                                <th>Course</th>
+                                <th>Section</th>
+                                <th>Day/s</th>
+                                <th>Time</th>
+                                <th>Room</th>
+                            </tr>
+                            <tr class="classRecommenderRow">
+                                <td>ADVDISC</td>
+                                <td>X23</td> 
+                                <td>MW</td>
+                                <td>915-1045</td>
+                                <td>MRE413</td>
+                            </tr>
+                            <tr class="classRecommenderRow">
+                                <td>TREDTRI</td>
+                                <td>X23</td> 
+                                <td>TH</td>
+                                <td>1615-1745</td>
+                                <td>MRE303</td>
+                            </tr>
+                            <tr class="classRecommenderRow">
+                                <td></td>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="classRecommenderRow">
+                                <td></td>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="classRecommenderRow">
+                                <td></td>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div id = "assessmentContent">
                     <div id="assessmentHeaderDiv">
