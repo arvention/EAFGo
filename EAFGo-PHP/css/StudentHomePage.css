@@ -48,7 +48,23 @@
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 20px;
-    margin-top: 23px;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+#logoutLabel{
+    display: block;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    float: right;
+    margin-right: 85px;
+}
+
+#logoutLabel:hover{
+    cursor: pointer;
+    color: olive;
 }
 
 /* ------------------- */

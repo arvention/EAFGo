@@ -24,6 +24,7 @@ and open the template in the editor.
             <div id = "headerRight">
                 <img src = "img/StuPicture.jpg" id = "headerPicture" height="50px" width="50px"/>
                 <h3 id = "headerName">Hello, Stu D. Ante!</h3>
+                <a id = "logoutLabel">Logout</a>
             </div>
         </div>
         <div id = "bodyDiv">
