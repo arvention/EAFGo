@@ -189,25 +189,25 @@ body{
     color: white;
     margin: 20px auto;
     display: block;
-    border: 1px solid #00703c;
+    border: 2px solid #00703c;
     border-radius: 5px;
     font-size: 16px;
     width: 200px;
 }
 
-#classRecommenderButton:hover, #assessmentPrintButton:hover, #enrollButton:hover{
+#classRecommenderButton:hover, #assessmentPrintButton:hover, #enrollButton:hover, #dropButton:hover{
     cursor: pointer;
     background-color: white;
     color: #00703c;
     border: 2px solid #00703c;
 }
 
-.classRecommenderRow{
+.classRecommenderRow, .dropRow{
     text-align: center;
     border: 1px solid black;
 }
 
-.classRecommenderRow > *{
+.classRecommenderRow > *, .dropRow > *{
     border: 1px black solid;
     height: 30px;
 }
@@ -330,10 +330,11 @@ tr:nth-child(odd) {
     font-size: 14px;
     margin-right: 20px;
     margin-left: 20px;
+    border: 1px solid black;
 }
 
 #scheduleTitle{
-    margin-top: 70px;
+    margin-top: 45px;
     margin-left: 20px;
 }
 
@@ -348,7 +349,7 @@ tr:nth-child(odd) {
     color: white;
     margin: 20px auto;
     display: block;
-    border: 1px solid #00703c;
+    border: 2px solid #00703c;
     border-radius: 5px;
     font-size: 24px;
     width: 400px;
@@ -361,4 +362,62 @@ tr:nth-child(odd) {
 
 #hometabDescription, #scheduleTitle, #enrollDropTitle{
     color: rgba(30, 80, 30, .9);
+}
+
+
+
+/* Drop */
+
+#dropLabel{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: #00703c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#dropSchedLabel{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+#dropTable{
+    margin: 0 auto; /* to center the table on div */
+    width: 450px;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+
+#dropButton{
+    background-color: #00703c;
+    color: white;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #00703c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.backDropButton{
+    background-color: grey;
+    color: white;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.backDropButton:hover{
+    background-color: white;
+    color:grey;
+    cursor: pointer;
 }

@@ -168,8 +168,62 @@ and open the template in the editor.
                             Enlist
                         </div>
                         <div id = "dropDiv">
-                            <button id = "enrollButton" class = "backDropButton">Go Back</button>
-                            drop
+                            <p id="dropLabel">Drop Courses</p>
+                            <p id="dropSchedLabel">Your Enrolled Courses for AY 2015-2016, Term 2</p>
+                            <form>
+                                <table id = "dropTable">
+                                    <tr class="dropRow">
+                                        <th>Drop</th>
+                                        <th>Course</th>
+                                        <th>Section</th>
+                                        <th>Day/s</th>
+                                        <th>Time</th>
+                                        <th>Room</th>
+                                    </tr>
+                                    <tr class="dropRow">
+                                        <td><input type ="checkbox"/></td>
+                                        <td>ADVDISC</td>
+                                        <td>X23</td> 
+                                        <td>MW</td>
+                                        <td>915-1045</td>
+                                        <td>MRE413</td>
+                                    </tr>
+                                    <tr class="dropRow">
+                                        <td><input type ="checkbox"/></td>
+                                        <td>TREDTRI</td>
+                                        <td>X23</td> 
+                                        <td>TH</td>
+                                        <td>1615-1745</td>
+                                        <td>MRE303</td>
+                                    </tr>
+                                    <tr class="dropRow">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td> 
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="dropRow">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td> 
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="dropRow">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td> 
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <input type ="submit" id="dropButton" value="Drop Selected Course/s"/>
+                            </form>
+                            <button class = "backDropButton">Go Back</button>
                         </div>
                     </div>
                     <div id = "scheduleDiv">
