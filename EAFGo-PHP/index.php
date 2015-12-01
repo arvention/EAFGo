@@ -2,7 +2,7 @@
     session_start();
     
     if(!empty($_SESSION['userDetails'])){
-        header('Location: SampleHomePage.php');
+        header('Location: StudentHomePage.php');
     }
     if(empty($_SESSION['loginTrials'])){
         $_SESSION["loginTrials"] = 0;

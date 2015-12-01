@@ -41,7 +41,58 @@ and open the template in the editor.
                     <li><a href="#assessmentContent" class = "tab">View Assessment</a></li>
                 </ul>
                 <div id = "homeContent">
-                    home
+                    <p>Based on your flowchart, you can enroll to the following courses for the upcoming term:</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Course</th>
+                            <th>Section</th>
+                            <th>Day/s</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ADVDISC</td>
+                            <td>X23</td> 
+                            <td>MW</td>
+                            <td>915-1045</td>
+                            <td>MRE413</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>AUTOMAT</td>
+                            <td>X23</td> 
+                            <td>TH</td>
+                            <td>1100-1230</td>
+                            <td>MRW413</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>SOFENGG</td>
+                            <td>X23</td> 
+                            <td>TH</td>
+                            <td>1430-1600</td>
+                            <td>MRW413</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>GAMEDES</td>
+                            <td>X23</td> 
+                            <td>MW</td>
+                            <td>1100-1230</td>
+                            <td>MRE412</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>TREDTRI</td>
+                            <td>X23</td> 
+                            <td>TH</td>
+                            <td>1615-1745</td>
+                            <td>MRE303</td>
+                        </tr>
+                    </table>
+                    <button>Enlist Chosen Course/s</button>
                 </div>
                 <div id = "enrollmentContent">
                     enrollment

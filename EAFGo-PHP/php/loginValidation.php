@@ -14,7 +14,7 @@
     if($userDetails != false){
         $_SESSION["userDetails"] = $userDetails;
         unset($_SESSION['loginTrials']);
-        header("Location: ../SampleHomePage.php");
+        header("Location: ../StudentHomePage.php");
     }
     else{
         $_SESSION["loginTrials"] = 1;
